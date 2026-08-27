@@ -317,6 +317,25 @@ section[data-loaded="true"]::after {
   .ecard-top {
     padding: 1rem;
   }
+
+  .ecard-category {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .ecard-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .ecard-desc {
+    font-size: 0.95rem;
+  }
+
+  .ecard-tags {
+    gap: 0.4rem;
+  }
 }
 
 /* ─── LIGHTBOX ─── */
@@ -446,6 +465,11 @@ section[data-loaded="true"]::after {
   }
   .lightbox-nav {
     display: none;
+  }
+
+  #lightbox-img {
+    max-width: 94vw;
+    max-height: 76vh;
   }
 }
 
@@ -790,5 +814,22 @@ section[data-loaded="true"]::after {
 
   .contact-info {
     flex: auto;
+  }
+
+  .contact-info-item p {
+    overflow-wrap: anywhere;
+  }
+
+  .timeline-item {
+    padding: 1.15rem;
+  }
+
+  .timeline-item h4 {
+    font-size: 1.05rem;
+  }
+
+  .timeline-item .company,
+  .timeline-item p {
+    font-size: 0.88rem;
   }
 }
