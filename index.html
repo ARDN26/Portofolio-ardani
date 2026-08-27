@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Muhammad Rifqi Ardani</title>
+    <meta
+      name="description"
+      content="A premium software developer portfolio showcasing projects, experience, and creative work."
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+
+    <!-- AOS Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Google Fonts: Inter + Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+  </head>
+
+  <body>
+    <!-- ===== FLOATING PARTICLES CANVAS ===== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Dev<span class="logo-dot"
+            >.</span
+          >folio<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="ph ph-sun" id="theme-icon"></i>
+          </button>
+          <button
+            class="mobile-menu-btn"
+            id="mobile-menu-btn"
+            aria-label="Menu"
+          >
+            <i class="ph ph-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-badge">
+          <i class="ph ph-hand-waving"></i>
+          <span>Welcome to my portfolio</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Muhammad Rifqi Ardani</span>
+        </h1>
+        <p class="hero-subtitle">
+          I craft <span class="typewriter" id="typewriter"></span>
+        </p>
+        <p class="hero-description">
+          A Bachelor of Information Systems graduate from Universitas Negeri
+          Surabaya with expertise in web and mobile application development,
+          cloud computing, database management, and back-end development.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ph ph-rocket-launch"></i>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="ph ph-envelope-simple"></i>
+            Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat-number" id="stat-projects">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+            <span class="stat-number" id="stat-experience">0</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+            <span class="stat-number" id="stat-clients">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left" data-aos-duration="1200">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/profile2.JPG" alt="Profile picture" />
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring ring-2"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator" id="scroll-indicator">
+        <i class="ph ph-caret-double-down"></i>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about" data-loaded="false">
+      <!-- Content will be loaded lazily -->
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section section-alt" id="projects" data-loaded="false">
+      <!-- Content will be loaded lazily -->
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="ph ph-briefcase"></i> Experience</span
+          >
+          <h2 class="section-title">My Journey</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline" id="experience-timeline">
+          <!-- Injected by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="ph ph-certificate"></i> Certifications</span
+          >
+          <h2 class="section-title">My Achievements</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="certifications-grid" id="certifications-container">
+          <!-- Injected by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag"
+            ><i class="ph ph-chat-dots"></i> Contact</span
+          >
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-icon">
+                <i class="ph ph-envelope-simple"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>rifqiardani267@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="ph ph-map-pin"></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>Gresik, Jawa Timur</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="ph ph-github-logo"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <p>github.com/ARDN26</p>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a
+                href="https://github.com/ARDN26"
+                target="_blank"
+                class="social-link"
+                aria-label="GitHub"
+                ><i class="ph ph-github-logo"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/muhammad-rifqi-ardani-362a7630b"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+                ><i class="ph ph-linkedin-logo"></i
+              ></a>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formsubmit.co/rifqiardani267@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="ph ph-paper-plane-tilt"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <a href="#" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Dev<span class="logo-dot"
+              >.</span
+            >folio<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-text">
+            &copy; <span id="year"></span> Muhammad Rifqi Ardani. Crafted with
+            Heart
+            <i class="ph ph-heart-fill" style="color: var(--color-primary)"></i>
+            and lots of coffee.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <!-- ===== LIGHTBOX (global, always in DOM) ===== -->
+    <div class="lightbox-overlay" id="lightbox-overlay">
+      <div class="lightbox-container">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+          <i class="ph ph-x"></i>
+        </button>
+        <button
+          class="lightbox-nav lightbox-prev"
+          id="lightbox-prev"
+          aria-label="Previous"
+        >
+          <i class="ph ph-caret-left"></i>
+        </button>
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="" id="lightbox-img" />
+        </div>
+        <button
+          class="lightbox-nav lightbox-next"
+          id="lightbox-next"
+          aria-label="Next"
+        >
+          <i class="ph ph-caret-right"></i>
+        </button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

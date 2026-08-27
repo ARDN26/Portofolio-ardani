@@ -1,0 +1,97 @@
+{
+  "projects": [
+    {
+      "title": "Lensakulitku App",
+      "description": "An Android application designed to help users identify and learn about various skin conditions.",
+      "image": "assets/images/project_thumbs/project1.png",
+      "url": "#",
+      "tags": ["Android", "Mobile Development"]
+    },
+    {
+      "title": "Sports Facility Rental Website",
+      "description": "A web-based platform for booking and managing sports facility rentals for the Gresik Regency.",
+      "image": "assets/images/project_thumbs/project1.png",
+      "url": "#",
+      "tags": ["Web Development", "UI/UX"]
+    },
+    {
+      "title": "Service Desk Ticketing System",
+      "description": "A comprehensive ticketing system available on both Android and Web platforms to manage IT service requests.",
+      "image": "assets/images/project_thumbs/project1.png",
+      "url": "#",
+      "tags": ["Android", "Web", "Backend"]
+    },
+    {
+      "title": "Umrah Quota Prediction",
+      "description": "A website utilizing Machine Learning to predict Umrah departure quotas.",
+      "image": "assets/images/project_thumbs/project1.png",
+      "url": "#",
+      "tags": ["Machine Learning", "Python", "Cloud"]
+    },
+    {
+      "title": "Umrah & Hajj Travel Admin",
+      "description": "An administration website for managing Umrah and Hajj travel agency operations.",
+      "image": "assets/images/project_thumbs/project1.png",
+      "url": "#",
+      "tags": ["Web Development", "Database"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Dinas Pariwisata dan Ekonomi Kreatif (Gresik)",
+      "role": "Administrative Assistant Youth & Sports",
+      "period": "Mar 2025 - Jun 2025",
+      "details": "Assisted with administrative tasks in the Youth and Sports Division, supporting local youth organizations and sports development."
+    },
+    {
+      "company": "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+      "role": "Cloud Computing Student",
+      "period": "Aug 2024 - Jan 2025",
+      "details": "Participated in an intensive career readiness program focused on Cloud Computing, gaining hands-on experience with Google Cloud, infrastructure, and DevOps workflows."
+    },
+    {
+      "company": "HMP SI UNESA",
+      "role": "Head of Religious Department",
+      "period": "Mar 2024 - Jan 2025",
+      "details": "Led the religious department for the Information Systems Student Association. Organized programs like Humaniti 2024, Winter Tech Talkshows, and managed team operations."
+    },
+    {
+      "company": "HIMTI UNESA",
+      "role": "Staff of Religious Department",
+      "period": "Mar 2023 - Feb 2024",
+      "details": "Chief organizer for the Webinar on Religious Moderation 2023. Coordinated PR for Gebyar Ramadhan and IT Sports events."
+    },
+    {
+      "company": "Games of Society (Futsal Series)",
+      "role": "Volunteer in Ballboy Division",
+      "period": "Aug 2024",
+      "details": "Volunteered for the largest student futsal league in Indonesia, supporting match operations in the Surabaya region."
+    },
+    {
+      "company": "Ikatan Mahasiswa Gresik Unesa",
+      "role": "Volunteer in Equipment Division",
+      "period": "Sep 2023 - Jan 2024",
+      "details": "Managed equipment for MISSION 3, a regional futsal competition held by the Gresik Student Association."
+    }
+  ],
+  "certifications": [
+    {"issuer": "Dicoding", "title": "Belajar Penerapan Machine Learning dengan Google Cloud"},
+    {"issuer": "Dicoding", "title": "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud"},
+    {"issuer": "Dicoding", "title": "Menjadi Google Cloud Engineer"},
+    {"issuer": "Dicoding", "title": "Belajar Dasar AI"},
+    {"issuer": "Dicoding", "title": "Belajar Dasar Pemrograman JavaScript"},
+    {"issuer": "Dicoding", "title": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software"},
+    {"issuer": "Dicoding", "title": "Pengenalan ke Logika Pemrograman (Programming Logic 101)"},
+    {"issuer": "Dicoding", "title": "Belajar Dasar Git dengan GitHub"},
+    {"issuer": "Dicoding", "title": "Belajar Dasar Pemrograman Web"},
+    {"issuer": "Google", "title": "Build Infrastructure with Terraform on Google Cloud"},
+    {"issuer": "Google", "title": "Implement Load Balancing on Compute Engine"},
+    {"issuer": "Google", "title": "Set Up an App Dev Environment on Google Cloud"},
+    {"issuer": "Google", "title": "Build a Secure Google Cloud Network"},
+    {"issuer": "Google", "title": "Develop your Google Cloud Network"},
+    {"issuer": "Google", "title": "Implement DevOps Workflows in Google Cloud"},
+    {"issuer": "Google", "title": "Google Cloud Computing Foundations: Cloud Computing Fundamentals"},
+    {"issuer": "Google", "title": "Monitor and Log with Google Cloud Observability"},
+    {"issuer": "Google", "title": "Prepare Data for ML APIs on Google Cloud"}
+  ]
+}
