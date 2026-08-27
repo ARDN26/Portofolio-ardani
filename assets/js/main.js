@@ -584,6 +584,7 @@ function _renderLightbox() {
 
 function initProjectInteractions() {
   const overlay = document.getElementById("lightbox-overlay");
+  const lightboxImageWrapper = document.querySelector(".lightbox-img-wrapper");
   const closeBtn = document.getElementById("lightbox-close");
   const prevBtn = document.getElementById("lightbox-prev");
   const nextBtn = document.getElementById("lightbox-next");
@@ -594,6 +595,28 @@ function initProjectInteractions() {
   /* Prev / Next */
   prevBtn && prevBtn.addEventListener("click", () => _shiftLightbox(-1));
   nextBtn && nextBtn.addEventListener("click", () => _shiftLightbox(1));
+
+  /* Swipe horizontally on mobile to change gallery images. */
+  let touchStartX = 0;
+  lightboxImageWrapper &&
+    lightboxImageWrapper.addEventListener(
+      "touchstart",
+      (e) => {
+        touchStartX = e.changedTouches[0].clientX;
+      },
+      { passive: true },
+    );
+  lightboxImageWrapper &&
+    lightboxImageWrapper.addEventListener(
+      "touchend",
+      (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const swipeDistance = touchEndX - touchStartX;
+        if (Math.abs(swipeDistance) < 50) return;
+        _shiftLightbox(swipeDistance < 0 ? 1 : -1);
+      },
+      { passive: true },
+    );
 
   /* Click on backdrop to close */
   overlay &&
